@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC3535"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/instagramText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/instagramText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/username"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/passwordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/passwordView"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="16dp"
+        android:text="LOG IN"
+        android:textColor="#757575" />
+
+    <TextView
+        android:id="@+id/forgotLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your login?"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/forgotLoginText"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:id="@+id/facebookLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in with Facebook"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/orText"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:id="@+id/facebookLogo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img_1"
+        android:layout_below="@id/orText"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="60dp"/>
+</RelativeLayout>
